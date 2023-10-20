@@ -10,7 +10,7 @@ import (
 
 func GCFHandler(MONGOCONNSTRINGENV, dbname, collectionname string) string {
 	mconn := SetConnection(MONGOCONNSTRINGENV, dbname)
-	datagedung := GetAllBangunanLineString(mconn, collectionname)
+	datagedung := GetAllUser(mconn, collectionname)
 	return GCFReturnStruct(datagedung)
 }
 
